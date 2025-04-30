@@ -4,7 +4,7 @@ import l from './locators';
 const buttonName = 'Request A Quote';
 const textCompleted = 'Форма отправлена успешно!';
 
-describe('template spec', () => {
+describe('test task', () => {
 
   beforeEach(() => {
     cy.viewport(1920, 1080);
