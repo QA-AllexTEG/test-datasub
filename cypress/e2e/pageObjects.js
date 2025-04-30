@@ -10,8 +10,20 @@ export class Test {
     return cy.get(l.REQUEST_FORM);
   }
   
+  get requestFormName() {
+    return cy.get(l.REQUEST_FORM_NAME);
+  }
+  
   get requestFormEmail() {
     return cy.get(l.REQUEST_FORM_EMAIL);
+  }
+  
+  get requestFormMessage() {
+    return cy.get(l.REQUEST_FORM_MESSAGE);
+  }
+  
+  get requestFormComplete() {
+    return cy.get(l.REQUEST_FORM_COMPLETE);
   }
 }
 
