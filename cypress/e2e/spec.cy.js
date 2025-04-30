@@ -4,7 +4,7 @@ import l from './locators';
 describe('template spec', () => {
 
   beforeEach(() => {
-    cy.viewport(1920, 1080)
+    cy.viewport(1920, 1080),
     cy.visit('https://qatest.datasub.com/')
   });
 
