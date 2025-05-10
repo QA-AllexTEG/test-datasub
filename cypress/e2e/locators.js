@@ -5,5 +5,5 @@ export default {
     REQUEST_FORM_EMAIL: '[id="q_email"]',
     REQUEST_FORM_MESSAGE: '[id="q_message"]',
     REQUEST_BTN_SEND: '.btn-dark',
-    REQUEST_FORM_COMPLETE: '[id="quoteStatus"]'
+    REQUEST_FORM_COMPLETE: '[id="quoteStatus"]',
 };
