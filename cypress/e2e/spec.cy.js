@@ -34,7 +34,8 @@ describe('test task', () => {
     .click();
     cy.url().should('include', '/quote');
     test.requestForm.should('be.visible');
-    test.requestFormName.should('be.visible').type('name');
+    test.requestFormName.should('be.visible')
+    .type('name');
     test.requestFormEmail.should('be.visible')
     .type('qwe@gmail.ru')
     .and('have.class', classes.VALID_EMAIL);
@@ -45,7 +46,7 @@ describe('test task', () => {
     cy.wait('@req').then((interception) => {
       const { response } = interception;
       expect(response.statusCode).to.eq(200);
-    })
+    });
     test.requestFormComplete.should('be.visible')
     .and('have.text', textCompleted);
   });
