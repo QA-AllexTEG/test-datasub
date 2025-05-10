@@ -10,7 +10,7 @@ describe('test task', () => {
   beforeEach(() => {
     cy.intercept('POST', 'https://track.promolytica.ru/ing').as('req');
     cy.viewport(1920, 1080);
-    cy.visit('https://qatest.datasub.com/')
+    cy.visit('https://qatest.datasub.com/');
   });
 
   it('negative case - Ввод почты без @', () => {
